@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umair's Restaurant</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #d35400;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #e67e22;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background: #f4f4f4;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?restaurant,food') no-repeat center center/cover;
+            height: 50vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Contact Section */
+        .contact-form {
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 0.5rem 1rem;
+            background: #d35400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Umair's Restaurant</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="hero">
+        <h1>Welcome to Umair's Restaurant</h1>
+        <p>Where every bite is a delight!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Explore a variety of delicious dishes crafted with love.</p>
+        <ul>
+            <li>Grilled Chicken - $12.99</li>
+            <li>Vegetarian Pasta - $9.99</li>
+            <li>Cheese Burger - $8.99</li>
+            <li>Chocolate Lava Cake - $6.99</li>
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <p>"The best dining experience I've ever had!" - Sarah</p>
+        <p>"Amazing food and excellent service!" - John</p>
+        <p>"I can't wait to come back!" - Ali</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to make a reservation? Reach out to us!</p>
+        <div class="contact-form">
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Umair's Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
